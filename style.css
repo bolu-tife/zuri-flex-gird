@@ -1,0 +1,131 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: url(img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.grid-container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+
+h1{
+    /* font-weight: 700;
+    padding: 20px; */
+}
+.column h1{
+    font-weight: 700;
+    padding: 20px 20px;
+}
+
+.column p{
+    padding: 0 20px;
+}
+
+.column{
+    width: 50%;
+    
+    
+}
+
+.headline{
+align-self: center;
+width: 50%;
+}
+
+form{
+    padding: 30px;
+}
+
+.form-group{
+    filter: drop-shadow(0 7px 0px rgba(0,0,0,0.1));
+}
+
+.trial-form{
+    border-radius: 7px;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+.trial-plan{
+    border-radius: 7px;
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+}
+
+.actual-price{
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(248, 44%, 80%);
+}
+
+input{
+    border-radius: 7px;
+    width: 95%;
+    padding: 2%;
+    margin: 10px 0px;
+    border: 1px solid #80808030;
+
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.claim-btn{
+    border-radius: 7px;
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    margin: 10px 0px 10px 0px;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.terms{
+color:  hsl(246, 25%, 77%);
+text-align: center;
+font-size: 10px;
+font-weight: 500;
+padding: 5px
+}
+
+.terms-services{
+    color: hsl(0, 100%, 74%) 
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .column{
+        width: 100%;
+        
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url(img/bg-intro-mobile.png);
+        text-align: center;
+    }
+
+
+}
