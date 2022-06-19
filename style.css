@@ -1,4 +1,8 @@
-@import url('https://fonts.google.com/specimen/Poppins');
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -10,19 +14,24 @@ body{
     margin: 0 auto;
 
 }
-
+/* 
 .grid-container{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     /* width: 100%; */
-}
+/* } */ 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    min-height: 100vh;
+    margin: auto;
+    padding: 3rem;
+  }
 
 
-h1{
-    /* font-weight: 700;
-    padding: 20px; */
-}
 .column h1{
     font-weight: 700;
     padding: 20px 20px;
@@ -75,7 +84,7 @@ form{
 input{
     border-radius: 7px;
     width: 95%;
-    padding: 2%;
+    padding: 1rem;
     margin: 10px 0px;
     border: 1px solid #80808030;
 
@@ -97,6 +106,10 @@ input::placeholder {
     color: white;
     text-align: center;
     border: none;
+}
+.claim-btn:hover{
+cursor: pointer;
+opacity: 0.6;
 }
 
 .terms{
@@ -121,11 +134,15 @@ padding: 5px
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     body{
         background-image: url(img/bg-intro-mobile.png);
         text-align: center;
     }
+    .container {
+        flex-direction: column;
+        text-align: center;
+      }
 
 
 }
